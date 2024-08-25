@@ -1,0 +1,280 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: cursive;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+}
+
+.dashboard,
+.game-host,
+.lobby-page {
+  width: 1200px;
+  height: 700px;
+  background-position-x: center;
+  background-size: cover;
+  position: relative;
+  background-color: black;
+  background-image: url("./image/background.jpg");
+}
+
+.text-image {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.text-image img {
+  width: 250px;
+  height: 150px;
+}
+
+.button-group {
+  position: absolute;
+  bottom: 250px;
+  left: 470px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.7rem;
+}
+
+.button-group button {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0.7rem 0.9rem;
+  border-radius: 8px;
+  border: 3px solid white;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.button-main,
+.button-second {
+  display: flex;
+  gap: 3rem;
+}
+
+.group-main .button {
+  display: inline;
+  padding: 0.9rem 2.5rem;
+}
+
+.button:hover {
+  background-color: rgb(56, 56, 56);
+}
+
+.wrap {
+  position: relative;
+  width: 600px;
+  padding: 2rem 3rem;
+}
+
+#how-to-play {
+  position: absolute;
+  top: 30%;
+  left: 27%;
+  background-color: black;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+
+#how-to-play h3 {
+  padding: 1rem 0rem;
+}
+
+#x-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem 0.5rem;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgb(202, 14, 14);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.game-host {
+  position: relative;
+}
+
+.host-plan {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.host-plan .title-host {
+  padding: 0.2rem;
+  border: 3px solid rgb(237, 236, 236);
+  border-radius: 8px;
+}
+
+.title-host input {
+  padding: 0.2rem 1.5rem;
+  font-size: 25px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.host .left {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  border: 5px solid white;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.host .left img {
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 105px;
+  height: 105px;
+}
+
+.host .right {
+  display: flex;
+  flex-direction: column;
+  height: 107px;
+  gap: 0.3rem;
+}
+
+.host .right p {
+  padding-left: 5px;
+  font-size: 30px;
+}
+.host .right button {
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: lighter;
+  color: rgb(224, 223, 223);
+  background-color: transparent;
+  border-radius: 6px;
+  border: 3px solid white;
+  margin-left: 10px;
+}
+
+.line {
+  width: 350px;
+  height: 6px;
+  margin-left: -2px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.available {
+  display: flex;
+  flex-direction: column;
+  color: rgb(224, 223, 223);
+  gap: 0.3rem;
+}
+
+.available p {
+  color: rgb(224, 223, 223);
+}
+
+.available .box {
+  background-color: black;
+  border-radius: 10px;
+  border: 3px solid white;
+  width: 500px;
+  height: 350px;
+  padding: 0.3rem;
+}
+
+.mini-box {
+  border-radius: 5px;
+  border: 2px solid white;
+  width: 100%;
+  height: 100%;
+}
+
+.back {
+  position: absolute;
+  border-radius: 10px;
+  background-color: black;
+  font-size: 14px;
+  color: rgb(212, 209, 209);
+  border: 3px solid white;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+
+.back:hover {
+  background-color: rgb(36, 36, 36);
+}
+
+.lobby-page {
+  background-image: url("./image/stars-background.jpg");
+}
+
+.background-lobby {
+  width: 850px;
+  height: 760px;
+  background-position-x: center;
+  background-size: cover;
+  position: absolute;
+  top: -30px;
+  left: 17%;
+  background-image: url("./image/lobby.png");
+}
+
+.character {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 300px;
+  left: 200px;
+}
+
+.character p {
+  font-size: 16px;
+  font-weight: bolder;
+  color: rgb(247, 245, 245);
+}
+
+.character img {
+  width: 80px;
+  height: 80px;
+}
+
+#lobby-btn:disabled {
+  cursor: auto;
+  background-color: rgb(142, 142, 142);
+  color: black;
+  border: none;
+  font-weight: bold;
+}

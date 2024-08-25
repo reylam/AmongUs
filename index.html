@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game Dashnoard</title>
+</head>
+
+<body>
+    <audio autoplay loop id="audio-main">
+        <source src="./music/among_us.mp3" type="audio/mp3">
+    </audio>
+    <audio id="audio-click">
+        <source src="./music/button_click.mp3" type="audio/mp3">
+    </audio>
+    <div class="container">
+        <div class="dashboard">
+            <div class="text-image">
+                <img src="./image/logo (2).png" alt="">
+            </div>
+            <div class="button-group">
+                <div class="group-main">
+                    <button class="button">Local</button>
+                    <button class="button" id="online-btn">Online</button>
+                </div>
+                <div class="group-second">
+                    <button class="button" id="htp-btn">How To Play</button>
+                    <button class="button">Free Play</button>
+                </div>
+            </div>
+            <div id="how-to-play" class="hidden">
+                <div class="wrap">
+                    <button id="x-btn">X</button>
+                    <h3>
+                        How To Play Among Us
+                    </h3>
+                    <ol>
+                        <li>
+                            Starting The Game: Join a lobby or create one.
+                        </li>
+                        <li>
+                            Gameplay: Whether you're a Crewmate or Impostor, avoiding suspicion is key. Use logic and
+                            observation to either uncover the Impostors or deceive the Crewmates.
+                        </li>
+                        <li>
+                            Crewmates win: By completing all tasks or ejecting all Impostors.
+                            <br>
+                            Impostors win: By eliminating enough Crewmates so that the number of Impostors equals the
+                            number
+                            of remaining Crewmates.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="game-host hidden">
+            <div class="host-plan">
+                <div class="title-host">
+                    <input type="text" placeholder="Budi" id="username">
+                </div>
+                <div class="host">
+                    <div class="left">
+                        <img src="./image/sus.png" alt="">
+                    </div>
+                    <div class="right">
+                        <p>HOST</p>
+                        <div class="line"></div>
+                        <button id="lobby-btn">Create Game</button>
+                    </div>
+                </div>
+                <div class="available">
+                    <p>Available Games</p>
+                    <div class="box">
+                        <div class="mini-box"></div>
+                    </div>
+                </div>
+            </div>
+            <button id="back" class="back">Back</button>
+        </div>
+        <div class="lobby-page hidden">
+            <div class="background-lobby">
+                <div class="character" id="character">
+                    <p id="fillUsername"></p>
+                    <img src="./image/Among_us/Blue/among_us_iddle_01_blue.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/lobby.js"></script>
+    <script src="./js/Player.js"></script>
+</body>
+
+</html>
