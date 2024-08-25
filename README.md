@@ -4,7 +4,7 @@ Welcome to the **Among Us Dashboard Game**! This project is a simple web-based g
 
 ## Project Overview
 
-This project was designed by **Cakra** and **Aldo**. The game includes features such as:
+This project assets was designed by **Cakra** and **Aldo**. The game includes features such as:
 
 - Background music that plays automatically when the page loads.
 - Interactive buttons that trigger sounds and navigate through different parts of the dashboard.
