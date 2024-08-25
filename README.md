@@ -39,10 +39,10 @@ To get started with this project, follow the steps below:
 3. Open index.html in your browser to start the game.
 
 ### Controls
-W: Move up
-A: Move left
-S: Move down
-D: Move right
+- W: Move up
+- A: Move left
+- S: Move down
+- D: Move right
 
 ### License
 This project is licensed under the MIT License - see the LICENSE file for details.
